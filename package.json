@@ -22,6 +22,7 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.1",
     "imagemin-pngquant": "^5.0.1",
     "rename": "^1.0.4"
   },

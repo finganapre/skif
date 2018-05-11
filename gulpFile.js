@@ -2,7 +2,7 @@ var gulp 		 = require('gulp'),
 	sass 		 = require('gulp-sass'),
 	browserSync  = require('browser-sync'),
 	concat 		 = require('gulp-concat'),
-	uglify		 = require('gulp-uglify'),
+	uglify		 = require('gulp-uglify-es').default,
 	cssnano 	 = require('gulp-cssnano'),
 	rename 		 = require('rename'),
 	del 		 = require('del'),
@@ -28,7 +28,8 @@ gulp.task('scripts-min', function(){
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'app/libs/bootstrap/dist/js/bootstrap.min.js',
-		'app/libs/wow/dist/wow.min.js'
+		'app/libs/wow/dist/wow.min.js',
+		'app/libs/slick-carousel/slick/slick.min.js'
 		])
 	.pipe( concat('libs.min.js') )
 	.pipe( uglify() )

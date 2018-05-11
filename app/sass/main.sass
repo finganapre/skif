@@ -2,14 +2,141 @@
 
 html, body
 	font-size: 16px
+
+
+
+
+
+.MainHeader
+	padding-top: 35px
+	padding-bottom: 30px
 .MainLogo
+	display: flex
+	flex-direction: row
+	justify-content: start
+	align-items: center
+	&__title
+		font-size: 2.7em
+		margin: 0
+		padding: 0
+		letter-spacing: 0.2em
+		margin-right: 10px
+		font-weight: bold
+		text-transform: uppercase
+		&__link
+			color: $blackColor
+			text-decoration: none
+			transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+			&:hover
+				text-decoration: none
+				color: $blackColor
+			&:focus
+				text-decoration: none
+				color: $blackColor
+			&__style-elem
+				top: -10px
+				color: $accentColor
+				&--sub-color
+					color: $subColor
+	&__tagline
+		font-size: 0.8em
+		line-height: 1.6em
+		font-weight: bold
+		text-transform: uppercase
+
+
+
+
+
+hr.line
+	height: 1px
+	background-color: $accentColor
+	border: none
+	margin: 0
+	padding: 0
+	width: 100%
+
+
+
+
+// navigationContainer
+.navigation-line
 	display: flex
 	flex-direction: row
 	justify-content: space-between
 	align-items: center
+	padding: 15px 0 15px 0
+
+// main navigation
+.MainMenu
+	&__list
+		display: flex
+		margin: 0
+		padding: 0
+		justify-content: space-between
+		align-items: center
+		&__item
+			list-style: none
+			margin-right: 12%
+			&__link
+				color: $blackColor
+				text-transform: uppercase
+				font-weight: bold
+				text-decoration: none
+				transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+				&:hover
+					text-decoration: none
+					color: $accentColor
+				&:focus
+					text-decoration: none
+					color: $subColor
+
+
+
+
+// slider
+.MainSlider
+	width: 100%
+	max-width: 100%
+	&__img
+		height: 425px
+		width: auto
+button.slick-next
+	right: 0
+button.slick-prev
+	left: 0
+
 // ----- default Sass Style ----- //
+.no-padding
+	padding: 0
 // button
-.button
+.flat-button
+	display: inline-block
+	border: none
+	color: $whiteColor
+	text-decoration: none
+	background-color: $accentColor
+	padding: 5px 12px
+	font-size: 0.9em
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 1px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	cursor: pointer
+	transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+	&:hover
+		color: $whiteColor
+		text-decoration: none
+		background-color: $subColor
+	&:focus
+		color: $whiteColor
+		text-decoration: none
+
+
+.material-button
 	display: inline-block
 	border: none
 	color: #fff
