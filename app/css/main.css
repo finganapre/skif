@@ -1,9 +1,31 @@
+html, body {
+  font-size: 16px; }
+
+.MainLogo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .button {
   display: inline-block;
   border: none;
   color: #fff;
   text-decoration: none;
-  background-color: #333;
+  background-color: #4bcaff;
   padding: 15px 45px;
   font-size: 13px;
   text-transform: uppercase;
@@ -27,7 +49,7 @@
     height: 4px;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #00354b;
     opacity: .18;
     -webkit-border-bottom-left-radius: 2px;
             border-bottom-left-radius: 2px;
@@ -39,11 +61,11 @@
     color: #fff;
     outline: none; }
   .button:hover {
-    background-color: #333, 5%; }
+    background-color: #4bcaff, 5%; }
     .button:hover::after {
       opacity: .22; }
   .button:active {
-    background-color: #262626; }
+    background-color: #32c2ff; }
     .button:active::after {
       opacity: .32; }
 
