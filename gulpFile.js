@@ -66,6 +66,7 @@ gulp.task('min-image', function(){
 	.pipe(gulp.dest('dist/img'));
 });
 
+
 ///////////////////////////////////////////////////////////////////////////////////////
 // автообновление страницы
 gulp.task('watch', ['browser-sync', 'sass', 'scripts-min', 'css-libs-min'], function(){ // параметры в квадратных скобках выполняются до watch

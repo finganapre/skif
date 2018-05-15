@@ -137,7 +137,10 @@ hr.line {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 500px; }
+    height: 500px;
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch; }
     .MainSlider__slide-container__img-container {
       width: 50%;
       float: left; }
