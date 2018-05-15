@@ -2,7 +2,7 @@
 
 html, body
 	font-size: 16px
-
+	min-width: 320px
 
 
 
@@ -57,6 +57,21 @@ html, body
 			&:focus
 				color: $blackColor
 				text-decoration: none
+#main-action-btns
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	& i
+		cursor: pointer
+		color: $accentColor
+		transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+		font-size: 22px
+		&:hover
+			color: $subColor
+			transform: scale(1.1, 1.1)
+.main-action-btns--navLine
+	width: 17%
+	max-width: 65px
 
 
 
@@ -185,8 +200,54 @@ hr.line
 			z-index: 11
 			&:before
 				font-size: 20px
-				//background-color: $whiteColor
 				color: $whiteColor	
+
+
+
+
+
+.SubNavigation
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 100%
+	align-items: center
+	&__list
+		align-self: stretch
+		padding: 0
+		margin: 0
+		&__item
+			list-style-type: none
+			margin: 0
+			padding: 0
+			display: inline-block
+			//border-right: 1px solid $accentColor
+			height: auto
+			padding: 10px 4% 10px 4%
+			&:nth-child(odd)
+				border-right: 1px solid $accentColor
+			&:nth-child(even)
+				border-right: 1px solid $subColor
+			&:last-child
+				border: none
+			&__link
+				display: block
+				color: inherit
+				text-transform: uppercase
+				font-weight: bold
+				text-decoration: none
+				padding: 2px 0
+				font-size: 1.5em
+				border-bottom: 1px solid $greyColor
+				transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+				&:hover
+					text-decoration: none
+					color: $accentColor
+					border-bottom: 1px solid $accentColor
+				&:focus
+					text-decoration: none
+					color: $subColor
+					border-bottom: 1px solid $subColor
 
 
 
@@ -263,6 +324,62 @@ hr.line
 		background-color: darken($accentColor, 5%)
 		&::after
 			opacity: .32
+
+
+
+
+
+// media quaries (Desktop first!)
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+	body
+		
+
+// Medium devices (desktops, 992px and up)
+@media (max-width: 1199px)
+	.MainMenu
+		&__list
+			&__item
+				margin-right: 9%
+	#main-action-btns
+		justify-content: space-around
+		
+
+// Small devices (tablets, 768px and up)
+@media (max-width: 991.9px)
+	.MainHeader
+		padding-top: 15px
+		padding-bottom: 20px
+	.MainLogo
+		margin-bottom: 15px
+	.Tel
+		text-align: right
+	#main-action-btns
+		justify-content: space-between
+	.MainMenu
+		display: none
+		
+
+// Extra small devices
+@media (max-width: 767.9px)
+	.MainHeader
+		padding-top: 15px
+		padding-bottom: 20px
+	.MainLogo
+		flex-direction: column
+		margin-bottom: 15px
+		&__title
+			margin-bottom: 10px
+		&__tagline
+			text-align: center
+	.Tel
+		text-align: right
+	.MainMenu
+		display: none
+
+
+
+
 
 // footer down
 body, html
