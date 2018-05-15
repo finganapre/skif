@@ -54,6 +54,21 @@ html, body {
     font-weight: bold;
     text-transform: uppercase; }
 
+.Tel {
+  margin: 0;
+  padding: 0; }
+  .Tel__item {
+    list-style-type: none; }
+    .Tel__item__link {
+      color: #333;
+      font-weight: bold; }
+      .Tel__item__link:hover {
+        color: #333;
+        text-decoration: none; }
+      .Tel__item__link:focus {
+        color: #333;
+        text-decoration: none; }
+
 hr.line {
   height: 1px;
   background-color: #4bcaff;
@@ -118,44 +133,40 @@ hr.line {
 .MainSlider {
   width: 100%;
   max-width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row; }
   .MainSlider__slide-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-            flex-direction: row;
-    height: 500px;
-    -webkit-align-self: stretch;
-        -ms-flex-item-align: stretch;
-            align-self: stretch; }
+            flex-direction: row; }
     .MainSlider__slide-container__img-container {
-      width: 50%;
-      float: left; }
+      width: 50%; }
       .MainSlider__slide-container__img-container__img {
         width: 100%;
-        height: auto; }
+        height: auto;
+        max-height: 450px; }
     .MainSlider__slide-container__text-container {
       background-color: #4bcaff;
-      padding: 30px;
+      padding: 60px;
       width: 50%;
       color: #fff;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -163,13 +174,65 @@ hr.line {
               flex-direction: column;
       -webkit-align-self: stretch;
           -ms-flex-item-align: stretch;
-              align-self: stretch; }
+              align-self: stretch;
+      -webkit-box-align: start;
+      -webkit-align-items: start;
+          -ms-flex-align: start;
+              align-items: start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .MainSlider__slide-container__text-container__header {
+        margin-bottom: 15px; }
+        .MainSlider__slide-container__text-container__header__title {
+          margin: 0; }
+      .MainSlider__slide-container__text-container__main-text {
+        margin-bottom: 30px; }
+        .MainSlider__slide-container__text-container__main-text p:last-child {
+          margin: 0; }
+      .MainSlider__slide-container__text-container__footer p:last-child {
+        margin: 0; }
 
-button.slick-next {
-  right: 0; }
+.slick-prev.slick-arrow {
+  left: 0;
+  z-index: 10;
+  left: 60px;
+  margin-top: -20px; }
+  .slick-prev.slick-arrow:before {
+    content: "\f104";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 80px; }
 
-button.slick-prev {
-  left: 0; }
+.slick-next.slick-arrow {
+  right: 0;
+  z-index: 10;
+  right: 60px;
+  margin-top: -20px; }
+  .slick-next.slick-arrow:before {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 80px; }
+
+.slick-dots {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 60px;
+  z-index: 11;
+  text-align: left;
+  padding-left: 52px; }
+  .slick-dots li {
+    z-index: 11; }
+    .slick-dots li.slick-active button:before {
+      color: #fff; }
+    .slick-dots li button {
+      z-index: 11; }
+      .slick-dots li button:before {
+        font-size: 20px;
+        color: #fff; }
 
 .no-padding {
   padding: 0; }

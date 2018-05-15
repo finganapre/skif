@@ -43,6 +43,20 @@ html, body
 		line-height: 1.6em
 		font-weight: bold
 		text-transform: uppercase
+.Tel
+	margin: 0
+	padding: 0
+	&__item
+		list-style-type: none
+		&__link
+			color: $blackColor
+			font-weight: bold
+			&:hover
+				color: $blackColor
+				text-decoration: none
+			&:focus
+				color: $blackColor
+				text-decoration: none
 
 
 
@@ -98,32 +112,85 @@ hr.line
 .MainSlider
 	width: 100%
 	max-width: 100%
-	display: flex
+	display: flex !important
 	flex-direction: row
 	&__slide-container
-		display: flex
+		display: flex !important
 		flex-direction: row
-		height: 500px
-		align-self: stretch
 		&__img-container
 			width: 50%
-			float: left
 			&__img
 				width: 100%
 				height: auto
+				max-height: 450px
 		&__text-container
 			background-color: $accentColor
-			padding: 30px
+			padding: 60px
 			width: 50%
 			color: $whiteColor
-			display: flex
+			display: flex !important
 			flex-direction: column
 			align-self: stretch
+			align-items: start
+			justify-content: center
+			&__header
+				margin-bottom: 15px
+				&__title
+					margin: 0
+			&__main-text
+				margin-bottom: 30px
+				& p:last-child
+					margin: 0
+			&__footer
+				& p:last-child
+					margin: 0
 
-button.slick-next
-	right: 0
-button.slick-prev
+// slick standart style change					
+.slick-prev.slick-arrow
 	left: 0
+	z-index: 10
+	left: 60px
+	margin-top: -20px
+	&:before
+		content: "\f104"
+		font-family: 'Font Awesome 5 Free'
+		font-weight: 900
+		font-size: 80px
+		
+.slick-next.slick-arrow
+	right: 0
+	z-index: 10
+	right: 60px
+	margin-top: -20px
+	&:before
+		content: "\f105"
+		font-family: 'Font Awesome 5 Free'
+		font-weight: 900
+		font-size: 80px
+.slick-dots
+	position: absolute
+	width: 50%
+	right: 0
+	bottom: 60px
+	z-index: 11
+	text-align: left
+	padding-left: 52px
+	& li
+		&.slick-active
+			& button
+				&:before
+					color: $whiteColor
+		z-index: 11
+		& button
+			z-index: 11
+			&:before
+				font-size: 20px
+				//background-color: $whiteColor
+				color: $whiteColor	
+
+
+
+
 
 // ----- default Sass Style ----- //
 .no-padding
