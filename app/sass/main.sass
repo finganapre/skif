@@ -98,9 +98,27 @@ hr.line
 .MainSlider
 	width: 100%
 	max-width: 100%
-	&__img
-		height: 425px
-		width: auto
+	display: flex
+	flex-direction: row
+	&__slide-container
+		display: flex
+		flex-direction: row
+		height: 500px
+		&__img-container
+			width: 50%
+			float: left
+			&__img
+				width: 100%
+				height: auto
+		&__text-container
+			background-color: $accentColor
+			padding: 30px
+			width: 50%
+			color: $whiteColor
+			display: flex
+			flex-direction: column
+			align-self: stretch
+
 button.slick-next
 	right: 0
 button.slick-prev
