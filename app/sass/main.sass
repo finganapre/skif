@@ -200,20 +200,28 @@ hr.line
 			z-index: 11
 			&:before
 				font-size: 20px
-				color: $whiteColor	
+				color: $whiteColor
+.slick-dotted.slick-slider
+	margin-bottom: 0
 
 
 
 
 
-.SubNavigation
+.DepartmentNav
 	display: flex
 	flex-direction: column
 	justify-content: center
 	width: 100%
 	align-items: center
+	padding: 30px 0 30px 0
 	&__list
+		width: 100%
 		align-self: stretch
+		display: flex
+		flex-direction: row
+		flex-wrap: no-wrap
+		justify-content: center
 		padding: 0
 		margin: 0
 		&__item
@@ -248,6 +256,33 @@ hr.line
 					text-decoration: none
 					color: $subColor
 					border-bottom: 1px solid $subColor
+
+
+
+
+
+
+
+
+
+
+
+.lightcyan-bg
+	background-color: $lightcyan
+
+// padding std
+.std-pd-medium
+	padding-top: 30px
+	padding-bottom: 30px
+	& h1, h2, h3, h4, h5, h6
+		&:first-child
+			margin-top: 0
+.std-pd-large
+	padding-top: 50px
+	padding-bottom: 50px
+	
+p:last-child
+	margin-bottom: 0
 
 
 
@@ -325,6 +360,41 @@ hr.line
 		&::after
 			opacity: .32
 
+// advCards
+.AdvContainer
+	margin: 0
+	padding: 0
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		list-style-type: none
+		padding: 0
+		margin: 0
+		display: inlyne-block
+		width: 25%
+		&__header
+			padding: 0 15px 0 15px
+			&__content
+		&__main
+			&__content
+				padding: 0 15px 0 15px
+				display: flex
+				align-items: center
+				flex-direction: column
+				&__img
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					& img
+						width: 100%
+						height: auto
+				&__text
+					padding: 15px
+		&__footer
+			padding: 0 15px 0 15px
+			&__content
 
 
 
@@ -334,17 +404,22 @@ hr.line
 @media (min-width: 1200px)
 	body
 		
-
 // Medium devices (desktops, 992px and up)
 @media (max-width: 1199px)
 	.MainMenu
 		&__list
 			&__item
 				margin-right: 9%
+
 	#main-action-btns
 		justify-content: space-around
-		
 
+	.DepartmentNav
+		&__list
+			&__item
+				padding: 10px 2% 10px 2%
+				&__link
+		
 // Small devices (tablets, 768px and up)
 @media (max-width: 991.9px)
 	.MainHeader
@@ -356,8 +431,16 @@ hr.line
 		text-align: right
 	#main-action-btns
 		justify-content: space-between
+
 	.MainMenu
 		display: none
+
+	.DepartmentNav
+		&__list
+			&__item
+				padding: 10px 2% 10px 2%
+				&__link
+					font-size: 1.1em
 		
 
 // Extra small devices
@@ -376,6 +459,15 @@ hr.line
 		text-align: right
 	.MainMenu
 		display: none
+
+	.DepartmentNav
+		&__list
+			flex-direction: column
+			&__item
+				border: none !important
+				padding: 10px 0 10px 0
+				&__link
+					font-size: 1em
 
 
 
