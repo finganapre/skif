@@ -2,7 +2,7 @@
 
 html, body
 	font-size: 16px
-	min-width: 320px
+	min-width: 305px
 
 
 
@@ -261,6 +261,86 @@ hr.line
 
 
 
+.SubNavCard
+	color: $blackColor
+	height: auto
+	/*margin-bottom: 30px*/
+	min-height: auto
+	&:after
+		display: table
+		content: ' '
+		box-sizing: border-box
+		clear: both
+	&__img-Container
+		width: 100%
+		float: left
+		text-align: center
+		&__img
+			width: 100%
+			height: auto
+	&__link-Container
+		float: left
+		width: 100%
+		text-align: center
+		padding: 30px
+		padding-bottom: 0
+		&__link
+			display: inline-block
+			color: inherit
+			text-transform: uppercase
+			font-weight: bold
+			text-decoration: none
+			padding: 2px 0
+			font-size: 1em
+			border-bottom: 1px solid $greyColor
+			transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+			&:hover
+				text-decoration: none
+				color: $accentColor
+				border-bottom: 1px solid $accentColor
+			&:focus
+				text-decoration: none
+				color: $subColor
+				border-bottom: 1px solid $subColor
+
+
+
+
+
+.Review
+	color: $blackColor
+	text-decoration: none
+	display: block
+	border: 1px solid $accentColor
+	padding: 30px
+	font-size: 1.1em
+	&:focus
+		color: $blackColor
+		text-decoration: none
+	&:hover
+		color: $blackColor
+		text-decoration: none
+	&__header
+		padding-bottom: 15px
+		&__content
+
+			&__date
+				color: $accentColor
+				text-transform: uppercase
+				font-weight: bold
+	&__main
+		&__content
+			padding-bottom: 15px
+			&__p
+				font-weight: bold
+	&__footer
+		&__content
+			&__name
+				color: $accentColor
+
+
+
+
 
 
 
@@ -278,8 +358,8 @@ hr.line
 		&:first-child
 			margin-top: 0
 .std-pd-large
-	padding-top: 50px
-	padding-bottom: 50px
+	padding-top: 60px
+	padding-bottom: 60px
 	
 p:last-child
 	margin-bottom: 0
@@ -441,6 +521,11 @@ p:last-child
 				padding: 10px 2% 10px 2%
 				&__link
 					font-size: 1.1em
+
+	.SubNavCard
+		margin-bottom: 40px
+		&--no-sm-margin
+			margin-bottom: 0
 		
 
 // Extra small devices
@@ -468,6 +553,17 @@ p:last-child
 				padding: 10px 0 10px 0
 				&__link
 					font-size: 1em
+	.SubNavCard
+		&--no-sm-margin
+			margin-bottom: 40px
+		&--no-xs-margin
+			margin-bottom: 0
+		&__img-Container
+			&__img
+				height: 100%
+				max-height: 150px
+				width: auto
+		
 
 
 
