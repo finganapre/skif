@@ -44,9 +44,18 @@ html, body {
       .MainLogo__title__link:focus {
         text-decoration: none;
         color: #333; }
+      .MainLogo__title__link--white {
+        color: #fff; }
+        .MainLogo__title__link--white:hover {
+          text-decoration: none;
+          color: #fff; }
+        .MainLogo__title__link--white:focus {
+          text-decoration: none;
+          color: #fff; }
       .MainLogo__title__link__style-elem {
-        top: -10px;
         color: #4bcaff; }
+        .MainLogo__title__link__style-elem--white {
+          color: #fff; }
         .MainLogo__title__link__style-elem--sub-color {
           color: #f41301; }
   .MainLogo__tagline {
@@ -54,6 +63,17 @@ html, body {
     line-height: 1.6em;
     font-weight: bold;
     text-transform: uppercase; }
+  .MainLogo--vr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    judtify-content: start;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
 
 .Tel {
   margin: 0;
@@ -416,6 +436,40 @@ hr.line {
       font-weight: bold; }
   .Review__footer__content__name {
     color: #4bcaff; }
+
+.MainFooter {
+  background-color: #4bcaff; }
+
+.FooterNav__title {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-weight: bold; }
+
+.FooterNav__list {
+  margin: 0;
+  padding: 0; }
+  .FooterNav__list__item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .FooterNav__list__item__link {
+      color: #fff;
+      text-dacoration: none;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+      line-height: 1.8; }
+      .FooterNav__list__item__link:hover {
+        color: #333;
+        text-decoration: none; }
+      .FooterNav__list__item__link:focus {
+        color: #fff;
+        text-decoration: none; }
 
 .lightcyan-bg {
   background-color: lightcyan; }

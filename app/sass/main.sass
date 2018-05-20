@@ -33,16 +33,32 @@ html, body
 			&:focus
 				text-decoration: none
 				color: $blackColor
+			&--white
+				color: $whiteColor
+				&:hover
+					text-decoration: none
+					color: $whiteColor
+				&:focus
+					text-decoration: none
+					color: $whiteColor
 			&__style-elem
-				top: -10px
 				color: $accentColor
+				&--white
+					color: $whiteColor
 				&--sub-color
 					color: $subColor
+
 	&__tagline
 		font-size: 0.8em
 		line-height: 1.6em
 		font-weight: bold
 		text-transform: uppercase
+
+	&--vr
+		flex-direction: column
+		judtify-content: start
+		align-items: start
+
 .Tel
 	margin: 0
 	padding: 0
@@ -340,6 +356,40 @@ hr.line
 
 
 
+
+
+.MainFooter
+	background-color: $accentColor
+
+.FooterNav
+	&__title
+		margin: 0
+		color: $whiteColor
+		text-transform: uppercase
+		margin-top: 12px
+		margin-bottom: 20px
+		line-height: 1.4
+		font-weight: bold
+	&__list
+		margin: 0
+		padding: 0
+		&__item
+			margin: 0
+			padding: 0
+			list-style-type: none
+			&__link
+				color: $whiteColor
+				text-dacoration: none
+				text-transform: uppercase
+				transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
+				line-height: 1.8
+				&:hover
+					color: $blackColor
+					text-decoration: none
+				&:focus
+					color: $whiteColor
+					text-decoration: none
+		
 
 
 
