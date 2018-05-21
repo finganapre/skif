@@ -23,6 +23,9 @@ html, body
 		margin-right: 10px
 		font-weight: bold
 		text-transform: uppercase
+		&--vr
+			margin: 0
+			margin-bottom: 15px
 		&__link
 			color: $blackColor
 			text-decoration: none
@@ -47,21 +50,32 @@ html, body
 					color: $whiteColor
 				&--sub-color
 					color: $subColor
-
+	&__copyright
+			color: white
 	&__tagline
 		font-size: 0.8em
 		line-height: 1.6em
 		font-weight: bold
 		text-transform: uppercase
+		&--white
+			color: $whiteColor
+		&--footerFont
+			text-transform: none
+			font-weight: 400
+			font-size: 1em
 
 	&--vr
 		flex-direction: column
 		judtify-content: start
 		align-items: start
+		margin: 0
+		
 
 .Tel
 	margin: 0
 	padding: 0
+	&--footer
+		margin-bottom: 10px
 	&__item
 		list-style-type: none
 		&__link
@@ -73,6 +87,23 @@ html, body
 			&:focus
 				color: $blackColor
 				text-decoration: none
+			&--footer
+				color: $whiteColor
+				font-weight: 400
+				font-size: 1.8em
+				line-height: 1.3
+				&:hover
+					color: $whiteColor
+					text-decoration: none
+				&:focus
+					color: $whiteColor
+					text-decoration: none
+
+.Address
+	color: $blackColor
+	&--white
+		color: $whiteColor
+
 #main-action-btns
 	display: flex
 	flex-direction: row
@@ -366,10 +397,11 @@ hr.line
 		margin: 0
 		color: $whiteColor
 		text-transform: uppercase
-		margin-top: 12px
+		margin-top: 15px
 		margin-bottom: 20px
 		line-height: 1.4
 		font-weight: bold
+		font-size: 0.95em
 	&__list
 		margin: 0
 		padding: 0
@@ -379,17 +411,26 @@ hr.line
 			list-style-type: none
 			&__link
 				color: $whiteColor
-				text-dacoration: none
+				text-decoration: none
 				text-transform: uppercase
 				transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
 				line-height: 1.8
+				font-size: 0.9em
 				&:hover
 					color: $blackColor
 					text-decoration: none
 				&:focus
 					color: $whiteColor
 					text-decoration: none
-		
+
+.FindContainer
+	&__find-button
+		&:before
+			content: "\f104"
+			font-family: 'Font Awesome 5 Free'
+			font-weight: 900
+			font-size: 80px
+	&__find-input
 
 
 
@@ -410,6 +451,9 @@ hr.line
 .std-pd-large
 	padding-top: 60px
 	padding-bottom: 60px
+
+.std-mn-medium
+	margin-bottom: 30px
 	
 p:last-child
 	margin-bottom: 0

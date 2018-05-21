@@ -32,6 +32,9 @@ html, body {
     margin-right: 10px;
     font-weight: bold;
     text-transform: uppercase; }
+    .MainLogo__title--vr {
+      margin: 0;
+      margin-bottom: 15px; }
     .MainLogo__title__link {
       color: #333;
       text-decoration: none;
@@ -58,11 +61,19 @@ html, body {
           color: #fff; }
         .MainLogo__title__link__style-elem--sub-color {
           color: #f41301; }
+  .MainLogo__copyright {
+    color: white; }
   .MainLogo__tagline {
     font-size: 0.8em;
     line-height: 1.6em;
     font-weight: bold;
     text-transform: uppercase; }
+    .MainLogo__tagline--white {
+      color: #fff; }
+    .MainLogo__tagline--footerFont {
+      text-transform: none;
+      font-weight: 400;
+      font-size: 1em; }
   .MainLogo--vr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -73,11 +84,14 @@ html, body {
     -webkit-box-align: start;
     -webkit-align-items: start;
         -ms-flex-align: start;
-            align-items: start; }
+            align-items: start;
+    margin: 0; }
 
 .Tel {
   margin: 0;
   padding: 0; }
+  .Tel--footer {
+    margin-bottom: 10px; }
   .Tel__item {
     list-style-type: none; }
     .Tel__item__link {
@@ -89,6 +103,22 @@ html, body {
       .Tel__item__link:focus {
         color: #333;
         text-decoration: none; }
+      .Tel__item__link--footer {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 1.3; }
+        .Tel__item__link--footer:hover {
+          color: #fff;
+          text-decoration: none; }
+        .Tel__item__link--footer:focus {
+          color: #fff;
+          text-decoration: none; }
+
+.Address {
+  color: #333; }
+  .Address--white {
+    color: #fff; }
 
 #main-action-btns {
   display: -webkit-box;
@@ -444,10 +474,11 @@ hr.line {
   margin: 0;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 15px;
   margin-bottom: 20px;
   line-height: 1.4;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 0.95em; }
 
 .FooterNav__list {
   margin: 0;
@@ -458,18 +489,25 @@ hr.line {
     list-style-type: none; }
     .FooterNav__list__item__link {
       color: #fff;
-      text-dacoration: none;
+      text-decoration: none;
       text-transform: uppercase;
       -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-      line-height: 1.8; }
+      line-height: 1.8;
+      font-size: 0.9em; }
       .FooterNav__list__item__link:hover {
         color: #333;
         text-decoration: none; }
       .FooterNav__list__item__link:focus {
         color: #fff;
         text-decoration: none; }
+
+.FindContainer__find-button:before {
+  content: "\f104";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 80px; }
 
 .lightcyan-bg {
   background-color: lightcyan; }
@@ -483,6 +521,9 @@ hr.line {
 .std-pd-large {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+.std-mn-medium {
+  margin-bottom: 30px; }
 
 p:last-child {
   margin-bottom: 0; }
