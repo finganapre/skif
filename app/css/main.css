@@ -159,6 +159,7 @@ hr.line {
   padding: 0;
   width: 100%; }
 
+/* navigationContainer */
 .navigation-line {
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,6 +180,7 @@ hr.line {
           align-items: center;
   padding: 15px 0 15px 0; }
 
+/* main navigation */
 .MainMenu__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -212,6 +214,7 @@ hr.line {
         text-decoration: none;
         color: #f41301; }
 
+/* slider */
 .MainSlider {
   width: 100%;
   max-width: 100%;
@@ -276,6 +279,7 @@ hr.line {
       .MainSlider__slide-container__text-container__footer p:last-child {
         margin: 0; }
 
+/* slick standart style change */
 .slick-prev.slick-arrow {
   left: 0;
   z-index: 10;
@@ -447,25 +451,59 @@ hr.line {
   display: block;
   border: 1px solid #4bcaff;
   padding: 30px;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  /*height: 100%*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px; }
   .Review:focus {
     color: #333;
     text-decoration: none; }
   .Review:hover {
     color: #333;
     text-decoration: none; }
-  .Review__header {
+  .Review__top__header {
     padding-bottom: 15px; }
-    .Review__header__content__date {
+    .Review__top__header__content__date {
       color: #4bcaff;
       text-transform: uppercase;
       font-weight: bold; }
-  .Review__main__content {
+  .Review__top__main__content {
     padding-bottom: 15px; }
-    .Review__main__content__p {
+    .Review__top__main__content__p {
+      width: 100%;
       font-weight: bold; }
   .Review__footer__content__name {
     color: #4bcaff; }
+  .Review__linkContainer {
+    display: block;
+    width: 100%;
+    text-align: right; }
+    .Review__linkContainer__link {
+      color: #333;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold; }
+      .Review__linkContainer__link:focus {
+        color: #333;
+        text-decoration: none; }
+      .Review__linkContainer__link:hover {
+        color: #333;
+        text-decoration: underline; }
 
 .MainFooter {
   background-color: #4bcaff; }
@@ -503,15 +541,47 @@ hr.line {
         color: #fff;
         text-decoration: none; }
 
-.FindContainer__find-button:before {
-  content: "\f104";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-size: 80px; }
+/* find form for drupal (bootstrap3) */
+.element-invisible {
+  display: none; }
+
+.btn.btn-primary.transp {
+  background-color: rgba(255, 255, 255, 0); }
+
+.btn.btn-primary.find {
+  border: none;
+  border-bottom: 1px solid #fff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  font-size: 18px; }
+
+.form-control.form-text.find {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid #fff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  padding-top: 18.5px;
+  padding-bottom: 18.5px; }
+  .form-control.form-text.find::-webkit-input-placeholder {
+    color: #fff; }
+  .form-control.form-text.find::-moz-placeholder {
+    color: #fff; }
+  .form-control.form-text.find:-ms-input-placeholder {
+    color: #fff; }
+  .form-control.form-text.find::-ms-input-placeholder {
+    color: #fff; }
+  .form-control.form-text.find::placeholder {
+    color: #fff; }
 
 .lightcyan-bg {
   background-color: lightcyan; }
 
+/* padding std */
 .std-pd-medium {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -528,9 +598,47 @@ hr.line {
 p:last-child {
   margin-bottom: 0; }
 
+/* bs3 + flex grid */
+/* use this style on row and col*/
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+  -webkit-justify-content: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.flex-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  -webkit-box-pack: column;
+  -webkit-justify-content: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start; }
+
+/* ----- default Sass Style ----- */
 .no-padding {
   padding: 0; }
 
+/* button */
 .flat-button {
   display: inline-block;
   border: none;
@@ -608,6 +716,7 @@ p:last-child {
     .material-button:active::after {
       opacity: .32; }
 
+/* advCards */
 .AdvContainer {
   margin: 0;
   padding: 0;
@@ -667,6 +776,9 @@ p:last-child {
     .AdvContainer__item__footer {
       padding: 0 15px 0 15px; }
 
+/* media quaries (Desktop first!) */
+/* Large devices (large desktops, 1200px and up) */
+/* Medium devices (desktops, 992px and up) */
 @media (max-width: 1199px) {
   .MainMenu__list__item {
     margin-right: 9%; }
@@ -677,6 +789,7 @@ p:last-child {
   .DepartmentNav__list__item {
     padding: 10px 2% 10px 2%; } }
 
+/* Small devices (tablets, 768px and up) */
 @media (max-width: 991.9px) {
   .MainHeader {
     padding-top: 15px;
@@ -685,6 +798,8 @@ p:last-child {
     margin-bottom: 15px; }
   .Tel {
     text-align: right; }
+    .Tel--footer {
+      text-align: left; }
   #main-action-btns {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -699,8 +814,11 @@ p:last-child {
   .SubNavCard {
     margin-bottom: 40px; }
     .SubNavCard--no-sm-margin {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .FooterNav__title {
+    margin-bottom: 10px; } }
 
+/* Extra small devices */
 @media (max-width: 767.9px) {
   .MainHeader {
     padding-top: 15px;
@@ -716,8 +834,15 @@ p:last-child {
       margin-bottom: 10px; }
     .MainLogo__tagline {
       text-align: center; }
+      .MainLogo__tagline--footerFont {
+        text-align: left; }
   .Tel {
     text-align: right; }
+    .Tel--footer {
+      text-align: left; }
+  .Address--footer {
+    display: inline-block;
+    margin-bottom: 30px; }
   .MainMenu {
     display: none; }
   .DepartmentNav__list {
@@ -740,6 +865,7 @@ p:last-child {
     max-height: 150px;
     width: auto; } }
 
+/* footer down */
 body, html {
   height: 100%; }
 
