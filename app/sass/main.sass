@@ -135,7 +135,7 @@ hr.line
 
 
 
-/* navigationContainer */
+// navigationContainer
 .navigation-line
 	display: flex
 	flex-direction: row
@@ -143,7 +143,7 @@ hr.line
 	align-items: center
 	padding: 15px 0 15px 0
 
-/* main navigation */
+// main navigation
 .MainMenu
 	&__list
 		display: flex
@@ -170,7 +170,7 @@ hr.line
 
 
 
-/* slider */
+// slider
 .MainSlider
 	width: 100%
 	max-width: 100%
@@ -188,6 +188,7 @@ hr.line
 		&__text-container
 			background-color: $accentColor
 			padding: 60px
+			padding-bottom: 101px
 			width: 50%
 			color: $whiteColor
 			display: flex !important
@@ -207,7 +208,7 @@ hr.line
 				& p:last-child
 					margin: 0
 
-/* slick standart style change */
+// slick standart style change
 .slick-prev.slick-arrow
 	left: 0
 	z-index: 10
@@ -236,8 +237,10 @@ hr.line
 	bottom: 60px
 	z-index: 11
 	text-align: left
-	padding-left: 52px
+	padding-left: 57px
 	& li
+		&:first-child
+			margin-left: 0
 		&.slick-active
 			& button
 				&:before
@@ -246,7 +249,7 @@ hr.line
 		& button
 			z-index: 11
 			&:before
-				font-size: 20px
+				font-size: 16px
 				color: $whiteColor
 .slick-dotted.slick-slider
 	margin-bottom: 0
@@ -310,7 +313,6 @@ hr.line
 .SubNavCard
 	color: $blackColor
 	height: auto
-	/*margin-bottom: 30px*/
 	min-height: auto
 	&:after
 		display: table
@@ -360,23 +362,24 @@ hr.line
 	border: 1px solid $accentColor
 	padding: 30px
 	font-size: 1.1em
-	/*height: 100%*/
 	display: flex
+	width: 100%
 	flex-direction: column
 	align-self: stretch
 	justify-content: space-between
 	margin-bottom: 30px
+	transition: $transAllCB
 	&:focus
 		color: $blackColor
 		text-decoration: none
 	&:hover
 		color: $blackColor
 		text-decoration: none
+		transform: scale(1.06, 1.06)
 	&__top
 		&__header
 			padding-bottom: 15px
 			&__content
-
 				&__date
 					color: $accentColor
 					text-transform: uppercase
@@ -387,7 +390,6 @@ hr.line
 				&__p
 					width: 100%
 					font-weight: bold
-					
 					//max-height: 200px
 					//overflow: hidden
 					//text-overflow: ellipsis				
@@ -404,12 +406,20 @@ hr.line
 			text-transform: uppercase
 			text-decoration: none
 			font-weight: bold
+			transition: transAllCB
 			&:focus
 				color: $blackColor
 				text-decoration: none
+				&:hover
+					color: $blackColor
+					text-decoration: none
+					border-bottom: 1px dashed $blackColor
+					border-width: 100%
 			&:hover
 				color: $blackColor
-				text-decoration: underline
+				text-decoration: none
+				border-bottom: 1px dashed $blackColor
+				border-width: 100%
 
 
 
@@ -448,7 +458,38 @@ hr.line
 					color: $whiteColor
 					text-decoration: none
 
-/* find form for drupal (bootstrap3) */
+// Article Page
+.Article
+	&__title
+		font-size: 3em
+		font-weight: bold
+.ArticleNav
+	padding: 0
+	margin: 0
+	&__list
+		padding: 0
+		margin: 0
+		&__item
+			list-style-type: none
+			&__link
+				font-size: 1.2em
+				color: $accentColor
+				text-decoration: none
+				border-bottom: 1px solid $accentColor
+				transition: $transAllCB
+				&:hover
+					color: $subColor
+					border-bottom: 1px solid $subColor
+					text-decoration: none
+				&:focus
+					color: $accentColor
+					border-bottom: 1px solid $accentColor
+					text-decoration: none
+					&:hover
+						color: $subColor
+						border-bottom: 1px solid $subColor
+						text-decoration: none
+// find form for drupal (bootstrap3)
 .element-invisible
 	display: none
 .btn.btn-primary.transp
@@ -479,7 +520,7 @@ hr.line
 .lightcyan-bg
 	background-color: $lightcyan
 
-/* padding std */
+// padding std
 .std-pd-medium
 	padding-top: 30px
 	padding-bottom: 30px
@@ -490,14 +531,21 @@ hr.line
 	padding-top: 60px
 	padding-bottom: 60px
 
-.std-mn-medium
+.std-mn-medium-b
 	margin-bottom: 30px
+.std-mn-medium
+	margin-top: 30px
+	margin-bottom: 30px
+.std-mn-large
+	margin-top: 60px
+	margin-bottom: 60px
+
 	
 p:last-child
 	margin-bottom: 0
 
-/* bs3 + flex grid */
-/* use this style on row and col*/
+// bs3 + flex grid
+// use this style on row and col
 .flex-row
 	display: flex
 	justify-content: row
@@ -509,12 +557,75 @@ p:last-child
 	justify-content: column
 	align-items: start
 
+// change bootstrap style
+a.color-link
+	color: $accentColor
+	text-decoration: none
+	border-bottom: 1px solid $accentColor
+	transition: $transAllCB
+	&:hover
+		color: $subColor
+		border-bottom: 1px solid $subColor
+		text-decoration: none
+	&:focus
+		color: $accentColor
+		border-bottom: 1px solid $accentColor
+		text-decoration: none
+		&:hover
+			color: $subColor
+			border-bottom: 1px solid $subColor
+			text-decoration: none
+a.black-link
+	color: $blackColor
+	text-decoration: none
+	border-bottom: 1px solid $blackColor
+	transition: $transAllCB
+	&:hover
+		color: $blackColor
+		border-bottom: 1px solid $accentColor
+		text-decoration: none
+	&:focus
+		color: $blackColor
+		border-bottom: 1px solid $blackColor
+		text-decoration: none
+		&:hover
+			color: $accentColor
+			border-bottom: 1px solid $accentColor
+			text-decoration: none
+
+.breadcrumb
+	padding: 0
+	margin: 0
+	& a
+		color: $accentColor
+		text-decoration: none
+		border-bottom: 1px solid $accentColor
+		transition: $transAllCB
+		&:hover
+			color: $subColor
+			border-bottom: 1px solid $subColor
+			text-decoration: none
+		&:focus
+			color: $accentColor
+			border-bottom: 1px solid $accentColor
+			text-decoration: none
+			&:hover
+				color: $subColor
+				border-bottom: 1px solid $subColor
+				text-decoration: none
+	& .delimiter
+		color: $greyColor
+	& .inline.odd.last
+		color: $blackColor
+
+
+
 
 
 /* ----- default Sass Style ----- */
 .no-padding
 	padding: 0
-/* button */
+// button
 .flat-button
 	display: inline-block
 	border: none
@@ -526,7 +637,7 @@ p:last-child
 	text-transform: uppercase
 	font-weight: 600
 	letter-spacing: 1px
-	border-radius: 2px
+	border-radius: 0
 	text-align: center
 	position: relative
 	outline: none
@@ -583,7 +694,7 @@ p:last-child
 		&::after
 			opacity: .32
 
-/* advCards */
+// advCards
 .AdvContainer
 	margin: 0
 	padding: 0
@@ -622,12 +733,12 @@ p:last-child
 
 
 
-/* media quaries (Desktop first!) */
-/* Large devices (large desktops, 1200px and up) */
+// media quaries (Desktop first!)
+// Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
 	body
 		
-/* Medium devices (desktops, 992px and up) */
+// Medium devices (desktops, 992px and up)
 @media (max-width: 1199px)
 	.MainMenu
 		&__list
@@ -643,7 +754,7 @@ p:last-child
 				padding: 10px 2% 10px 2%
 				&__link
 		
-/* Small devices (tablets, 768px and up) */
+// Small devices (tablets, 768px and up)
 @media (max-width: 991.9px)
 	.MainHeader
 		padding-top: 15px
@@ -654,6 +765,10 @@ p:last-child
 		text-align: right
 		&--footer
 			text-align: left
+	.ArticleNav
+		margin-bottom: 15px
+		&--last
+			margin-bottom: 0
 	
 
 	#main-action-btns
@@ -679,7 +794,7 @@ p:last-child
 			margin-bottom: 10px
 		
 
-/* Extra small devices */
+// Extra small devices
 @media (max-width: 767.9px)
 	.MainHeader
 		padding-top: 15px
@@ -729,7 +844,7 @@ p:last-child
 
 
 
-/* footer down */
+// footer down
 body, html
 	height: 100%
 .wrapper

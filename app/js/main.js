@@ -44,42 +44,44 @@ $(function(){
 	var navigationLine = $('.navigation-line');
 	var mainHeader = $('.MainHeader');
 
-	var navLineClass = 'main-action-btns--navLine';
+	if ( (mainActionBtns.length > 0) && (navigationLine.length > 0) && (mainHeader.length > 0)){
+		var navLineClass = 'main-action-btns--navLine';
 
-	// test resolution and button position
-	changeActionBtnsPosCtrl();
-
-
-
-
-
-	// ----- onResize ----- //
-	window.addEventListener('resize', changeActionBtnsPosCtrl);
+		// test resolution and button position
+		changeActionBtnsPosCtrl();
 
 
 
 
 
-	// ----- FUN ----- //
-
-	// test resolution and button position
-	function changeActionBtnsPosCtrl (event) {
-		windowWidth = document.documentElement.clientWidth;
-		window.removeEventListener('resize', changeActionBtnsPosCtrl);
-
-		(windowWidth < md) ? putMainBtnToNavLine() : putMainBtnToHeader();
-
+		// ----- onResize ----- //
 		window.addEventListener('resize', changeActionBtnsPosCtrl);
-	}
 
-	function putMainBtnToNavLine () {
-		mainActionBtns.detach().addClass(navLineClass);
-		navigationLine.prepend(mainActionBtns);
-	}
 
-	function putMainBtnToHeader () {
-		mainActionBtns.detach().removeClass(navLineClass);
-		mainHeader.find('.row').find('div').last().prepend(mainActionBtns);
+
+
+
+		// ----- FUN ----- //
+
+		// test resolution and button position
+		function changeActionBtnsPosCtrl (event) {
+			windowWidth = document.documentElement.clientWidth;
+			window.removeEventListener('resize', changeActionBtnsPosCtrl);
+
+			(windowWidth < md) ? putMainBtnToNavLine() : putMainBtnToHeader();
+
+			window.addEventListener('resize', changeActionBtnsPosCtrl);
+		}
+
+		function putMainBtnToNavLine () {
+			mainActionBtns.detach().addClass(navLineClass);
+			navigationLine.prepend(mainActionBtns);
+		}
+
+		function putMainBtnToHeader () {
+			mainActionBtns.detach().removeClass(navLineClass);
+			mainHeader.find('.row').find('div').last().prepend(mainActionBtns);
+		}
 	}
 });
 
