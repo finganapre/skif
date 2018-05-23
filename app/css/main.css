@@ -477,9 +477,9 @@ hr.line {
   .Review:hover {
     color: #333;
     text-decoration: none;
-    -webkit-transform: scale(1.06, 1.06);
-        -ms-transform: scale(1.06, 1.06);
-            transform: scale(1.06, 1.06); }
+    -webkit-transform: scale(1.05, 1.05);
+        -ms-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05); }
   .Review__top__header {
     padding-bottom: 15px; }
     .Review__top__header__content__date {
@@ -588,6 +588,38 @@ hr.line {
             border-bottom: 1px solid #f41301;
             text-decoration: none; }
 
+.PhotoCard {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  margin-bottom: 15px; }
+  .PhotoCard:hover {
+    color: #333;
+    text-decoration: none; }
+  .PhotoCard:focus {
+    color: #333;
+    text-decoration: none; }
+    .PhotoCard:focus:hover {
+      color: #333;
+      text-decoration: none; }
+  .PhotoCard__photo {
+    width: 100%;
+    text-align: center; }
+    .PhotoCard__photo__img {
+      width: 100%;
+      height: auto; }
+  .PhotoCard__text {
+    padding: 10px 0 10px 0;
+    width: 100%; }
+    .PhotoCard__text__title {
+      display: block;
+      width: 100%; }
+
 .element-invisible {
   display: none; }
 
@@ -639,6 +671,9 @@ hr.line {
 
 .std-mn-medium-b {
   margin-bottom: 30px; }
+
+.std-mn-small-b {
+  margin-bottom: 20px; }
 
 .std-mn-medium {
   margin-top: 30px;
@@ -978,7 +1013,14 @@ a.black-link {
   .SubNavCard__img-Container__img {
     height: 100%;
     max-height: 150px;
-    width: auto; } }
+    width: auto; }
+  .Article__title {
+    font-size: 2em; }
+  .PhotoCard__photo__img {
+    height: 150px;
+    width: auto; }
+  .PhotoCard__text {
+    text-align: center; } }
 
 body, html {
   height: 100%; }
