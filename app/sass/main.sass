@@ -121,9 +121,12 @@ html, body
 	max-width: 65px
 
 
-
-
-
+.border-left-container
+	width: 100%
+	border-left: 1px solid $accentColor
+.line-container-md
+	width: 50%
+	margin: 0 auto
 hr.line
 	height: 1px
 	background-color: $accentColor
@@ -397,29 +400,29 @@ hr.line
 		&__content
 			&__name
 				color: $accentColor
-	&__linkContainer
-		display: block
-		width: 100%
-		text-align: right
-		&__link
+.CutomLinkContainer
+	display: block
+	width: 100%
+	text-align: right
+	&__link
+		color: $blackColor
+		text-transform: uppercase
+		text-decoration: none
+		font-weight: bold
+		transition: transAllCB
+		&:focus
 			color: $blackColor
-			text-transform: uppercase
 			text-decoration: none
-			font-weight: bold
-			transition: transAllCB
-			&:focus
-				color: $blackColor
-				text-decoration: none
-				&:hover
-					color: $blackColor
-					text-decoration: none
-					border-bottom: 1px dashed $blackColor
-					border-width: 100%
 			&:hover
 				color: $blackColor
 				text-decoration: none
 				border-bottom: 1px dashed $blackColor
 				border-width: 100%
+		&:hover
+			color: $blackColor
+			text-decoration: none
+			border-bottom: 1px dashed $blackColor
+			border-width: 100%
 
 
 
@@ -462,6 +465,11 @@ hr.line
 .Article
 	&__title
 		font-size: 3em
+		font-weight: bold
+		&--back
+			font-size: 1.7em
+	&__sub-title
+		font-size: 1.5em
 		font-weight: bold
 .ArticleNav
 	padding: 0
@@ -521,6 +529,99 @@ hr.line
 			width: 100%
 		&__item
 
+//specialist
+.Article__spec__header
+	display: flex
+	flex-direction: row
+	justify-content: start
+	width: 100%
+	&__left-col
+		width: 50%
+		&__img
+			width: 100%
+			height: auto
+	&__right-col
+		width: 50%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&__top
+			width: 80%			
+			&__title
+				font-weight: bold
+				font-size: 2.3em
+				border-bottom: 1px solid $accentColor
+				padding: 15px
+				margin: 0
+				&__surname
+					display: inline-block
+					width: 100%
+					text-align: center
+					margin-bottom: 5px
+					
+				&__f-m-name
+					display: inline-block
+					width: 100%
+					text-align: center
+		&__mid
+			width: 80%
+			
+			&__achievements
+				text-align: center
+				padding: 15px
+				width: 100%
+				color: $darkGreyColor
+				
+		&__bottom
+
+.Certificate
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: start
+	flex-wrap: nowrap
+	margin: 0
+	padding: 0
+	width: 100%
+	&__item
+		list-style-type: none
+		display: block
+		width: 15%
+		margin: 0
+		padding: 0
+		&__img
+			width: 100%
+			height: auto
+			max-height: 100%
+
+.GamburgerNavTitle
+	color: $accentColor
+	text-transform: uppercase
+	font-weight: bold
+.WorkTime
+	border-left: 1px solid $accentColor
+	padding: 0 30px 0 30px
+	&__header
+		margin-bottom: 15px
+		&__img
+			width: 100%
+			height: auto
+	&__main
+		&__time-container
+			padding: 15px 0 0 0
+			&__d-of-t-w
+				font-size: 1em
+				text-align: center
+				color: $accentColor
+				font-weight: bold
+				margin-bottom: 5px
+			&__time
+				font-size: 2.4em
+				text-align: center
+				color: $blackColor
+				font-weight: bold
+				line-height: 1
 
 // find form for drupal (bootstrap3)
 .element-invisible
@@ -560,6 +661,8 @@ hr.line
 	& h1, h2, h3, h4, h5, h6
 		&:first-child
 			margin-top: 0
+.std-pd-medium-b
+	padding-bottom: 30px
 .std-pd-large
 	padding-top: 60px
 	padding-bottom: 60px
@@ -610,6 +713,24 @@ a.color-link
 			color: $subColor
 			border-bottom: 1px solid $subColor
 			text-decoration: none
+a.black-link-2
+	color: $blackColor
+	text-decoration: none
+	border-bottom: 1px solid $blackColor
+	transition: $transAllCB
+	&:hover
+		color: $accentColor
+		border-bottom: 1px solid $accentColor
+		text-decoration: none
+	&:focus
+		color: $blackColor
+		border-bottom: 1px solid $blackColor
+		text-decoration: none
+		&:hover
+			color: $accentColor
+			border-bottom: 1px solid $accentColor
+			text-decoration: none
+
 a.black-link
 	color: $blackColor
 	text-decoration: none
