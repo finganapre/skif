@@ -117,7 +117,7 @@ html, body
 			color: $subColor
 			transform: scale(1.1, 1.1)
 .main-action-btns--navLine
-	width: 17%
+	width: 25%
 	max-width: 65px
 
 
@@ -610,7 +610,7 @@ hr.line
 			height: auto
 	&__main
 		&__time-container
-			padding: 15px 0 0 0
+			padding: 15px 0 15px 0
 			&__d-of-t-w
 				font-size: 1em
 				text-align: center
@@ -938,6 +938,19 @@ a.black-link
 			&__img
 				width: 70%
 				height: auto
+	.WorkTime
+		border: none
+		border-top: 1px solid $accentColor
+		padding: 30px 30px 0 30px
+		margin-top: 60px
+		&__header
+			&__img
+				width: 15%
+				height: auto
+		&__main
+			&__time-container
+				&__d-of-t-w
+				&__time
 		
 // Small devices (tablets, 768px and up)
 @media (max-width: 991.9px)
@@ -959,6 +972,22 @@ a.black-link
 		margin-bottom: 15px
 		&--last
 			margin-bottom: 0
+	.Article__spec__header
+		flex-direction: column
+		justify-content: start
+		align-items: center
+		width: 100%
+		&__left-col
+			&__img
+		&__right-col
+			width: 100%
+			&__top		
+				&__title
+					&__surname
+					&__f-m-name
+			&__mid
+				&__achievements
+			&__bottom
 	
 
 	#main-action-btns
@@ -978,6 +1007,19 @@ a.black-link
 		margin-bottom: 40px
 		&--no-sm-margin
 			margin-bottom: 0
+	.WorkTime
+		border: none
+		border-top: 1px solid $accentColor
+		padding: 30px 30px 0 30px
+		margin-top: 60px
+		&__header
+			&__img
+				width: 25%
+				height: auto
+		&__main
+			&__time-container
+				&__d-of-t-w
+				&__time
 
 	.FooterNav
 		&__title
@@ -1005,7 +1047,24 @@ a.black-link
 	.Address--footer
 		display: inline-block
 		margin-bottom: 30px
-
+	.Article__spec__header
+		&__left-col
+			width: 100%
+			text-align: center
+			&__img
+				height: 100%
+				max-height: 150px
+				width: auto
+		&__right-col
+			width: 100%
+			&__top		
+				&__title
+					font-size: 1.5em
+					&__surname
+					&__f-m-name
+			&__mid
+				&__achievements
+			&__bottom
 	.MainMenu
 		display: none
 
@@ -1038,6 +1097,16 @@ a.black-link
 				width: auto
 		&__text
 			text-align: center
+	.WorkTime
+		&__header
+			&__img
+				width: auto
+				height: 100%
+				max-height: 150px
+		&__main
+			&__time-container
+				&__d-of-t-w
+				&__time
 	
 		
 
