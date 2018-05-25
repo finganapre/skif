@@ -762,20 +762,20 @@ hr.line {
       font-weight: bold;
       line-height: 1; }
 
-.element-invisible {
+.FooterSearch .element-invisible {
   display: none; }
 
-.btn.btn-primary.transp {
+.FooterSearch .btn.btn-primary.transp {
   background-color: rgba(255, 255, 255, 0); }
 
-.btn.btn-primary.find {
+.FooterSearch .btn.btn-primary.find {
   border: none;
   border-bottom: 1px solid #fff;
   -webkit-border-radius: 0;
           border-radius: 0;
   font-size: 18px; }
 
-.form-control.form-text.find {
+.FooterSearch .form-control.form-text.find {
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -787,16 +787,50 @@ hr.line {
   font-size: 16px;
   padding-top: 18.5px;
   padding-bottom: 18.5px; }
-  .form-control.form-text.find::-webkit-input-placeholder {
+  .FooterSearch .form-control.form-text.find::-webkit-input-placeholder {
     color: #fff; }
-  .form-control.form-text.find::-moz-placeholder {
+  .FooterSearch .form-control.form-text.find::-moz-placeholder {
     color: #fff; }
-  .form-control.form-text.find:-ms-input-placeholder {
+  .FooterSearch .form-control.form-text.find:-ms-input-placeholder {
     color: #fff; }
-  .form-control.form-text.find::-ms-input-placeholder {
+  .FooterSearch .form-control.form-text.find::-ms-input-placeholder {
     color: #fff; }
-  .form-control.form-text.find::placeholder {
+  .FooterSearch .form-control.form-text.find::placeholder {
     color: #fff; }
+
+.GamburgerSearch .element-invisible {
+  display: none; }
+
+.GamburgerSearch .btn.btn-primary.transp {
+  background-color: #4bcaff; }
+
+.GamburgerSearch .btn.btn-primary.find {
+  border: 1px solid #4bcaff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  font-size: 18px; }
+
+.GamburgerSearch .form-control.form-text.find {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #4bcaff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  padding-top: 18.5px;
+  padding-bottom: 18.5px; }
+  .GamburgerSearch .form-control.form-text.find::-webkit-input-placeholder {
+    color: #4bcaff; }
+  .GamburgerSearch .form-control.form-text.find::-moz-placeholder {
+    color: #4bcaff; }
+  .GamburgerSearch .form-control.form-text.find:-ms-input-placeholder {
+    color: #4bcaff; }
+  .GamburgerSearch .form-control.form-text.find::-ms-input-placeholder {
+    color: #4bcaff; }
+  .GamburgerSearch .form-control.form-text.find::placeholder {
+    color: #4bcaff; }
 
 .lightcyan-bg {
   background-color: lightcyan; }

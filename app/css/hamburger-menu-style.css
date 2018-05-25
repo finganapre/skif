@@ -3,16 +3,17 @@
 div#finSliderMenu-menuBlock{
 	position: absolute;
 	z-index: 1101 !important; /*не менять*/
-	background-color: #fff;/*#171717;*/
+	background-color: rgba(255, 255, 255, 0);/*#171717;*/
 	color: #333;
 	top: 0;
 	display: none; /*не менять*/
 }
 div#finSliderMenu-menuContentBlock{
 	width:auto;
-	padding: 60px 5% 0 5%;
+	padding: 0 5% 0 5%;
 	position: fixed;
 	display: none; /*не менять*/
+	background-color: #fff;
 }
 
 .fin-hmb-line-wrapp{
@@ -199,7 +200,7 @@ div#finSliderMenu-menuContentBlock{
 {
 	border-radius: 0;
 	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
-	background-color: #444;
+	background-color: #4bcaff;
 }
 
 
@@ -209,6 +210,8 @@ div#finSliderMenu-menuContentBlock{
 	float: left;
 	width: 100%;
 	height: 30px;
+	padding: 0 15px 0 15px;
+
 }
 /* close button inside content menu */
 #finSliderMenu-menuCloseButton{
@@ -226,7 +229,7 @@ div#finSliderMenu-menuContentBlock{
 	background-color: #4bcaff;
 	height: 2px;
 	left: 0;
-	top: 0;
+	top: 15px;
 	width: 100%;
 	z-index: 10002;
 	position: absolute;
@@ -238,7 +241,7 @@ div#finSliderMenu-menuContentBlock{
 	width: 100%;
 	height: 2px;
 	left: 0;
-	top: 0;
+	top: 15px;
 	z-index: 10003;
 	position: absolute;
 }

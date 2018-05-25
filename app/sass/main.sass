@@ -624,27 +624,50 @@ hr.line
 				line-height: 1
 
 // find form for drupal (bootstrap3)
-.element-invisible
-	display: none
-.btn.btn-primary.transp
-	background-color: $transpBg
-.btn.btn-primary.find
-	border: none
-	border-bottom: 1px solid $whiteColor
-	border-radius: 0
-	font-size: 18px
-.form-control.form-text.find
-	color: $whiteColor
-	background-color: $transpBg
-	border: none
-	border-bottom: 1px solid $whiteColor
-	border-radius: 0
-	box-shadow: none
-	font-size: 16px
-	padding-top: 18.5px
-	padding-bottom: 18.5px
-	&::placeholder
+.FooterSearch
+	& .element-invisible
+		display: none
+	& .btn.btn-primary.transp
+		background-color: $transpBg
+	& .btn.btn-primary.find
+		border: none
+		border-bottom: 1px solid $whiteColor
+		border-radius: 0
+		font-size: 18px
+	& .form-control.form-text.find
 		color: $whiteColor
+		background-color: $transpBg
+		border: none
+		border-bottom: 1px solid $whiteColor
+		border-radius: 0
+		box-shadow: none
+		font-size: 16px
+		padding-top: 18.5px
+		padding-bottom: 18.5px
+		&::placeholder
+			color: $whiteColor
+.GamburgerSearch
+	& .element-invisible
+		display: none
+	& .btn.btn-primary.transp
+		background-color: $accentColor
+	& .btn.btn-primary.find
+		
+		border: 1px solid $accentColor
+		border-radius: 0
+		font-size: 18px
+	& .form-control.form-text.find
+		color: $blackColor
+		background-color: $transpBg
+		
+		border: 1px solid $accentColor
+		border-radius: 0
+		box-shadow: none
+		font-size: 16px
+		padding-top: 18.5px
+		padding-bottom: 18.5px
+		&::placeholder
+			color: $accentColor
 
 
 

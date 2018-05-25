@@ -27,7 +27,7 @@ jQuery(function(){
         zIndex: 100,
         top: 0,
         left:0,
-        backgroundColor: '#333',
+        backgroundColor: '#fff',
         opacity: 0,
         display: 'block',
         cursor: 'pointer'
@@ -37,7 +37,7 @@ jQuery(function(){
       backgroundOpacityElem.height(dtcWinScreenHeight());
 
       backgroundOpacityElem.animate({
-        opacity: 0.6
+        opacity: 1
       }, elements.menuBlock.animation.time.openMenuBlock, function(){
         window.addEventListener('resize', resizeBg);
         backgroundOpacityElem.bind('click', function(event){
