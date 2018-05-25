@@ -422,7 +422,7 @@ hr.line {
     float: left;
     text-align: center; }
     .SubNavCard__img-Container__img {
-      width: 100%;
+      width: 60%;
       height: auto; }
   .SubNavCard__link-Container {
     float: left;
@@ -743,9 +743,10 @@ hr.line {
   border-left: 1px solid #4bcaff;
   padding: 0 30px 0 30px; }
   .WorkTime__header {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    text-align: center; }
     .WorkTime__header__img {
-      width: 100%;
+      width: 60%;
       height: auto; }
   .WorkTime__main__time-container {
     padding: 15px 0 0 0; }
@@ -1134,7 +1135,10 @@ a.black-link {
         -ms-flex-pack: distribute;
             justify-content: space-around; }
   .DepartmentNav__list__item {
-    padding: 10px 2% 10px 2%; } }
+    padding: 10px 2% 10px 2%; }
+  .SubNavCard__img-Container__img {
+    width: 70%;
+    height: auto; } }
 
 @media (max-width: 991.9px) {
   .MainHeader {
@@ -1146,6 +1150,9 @@ a.black-link {
     text-align: right; }
     .Tel--footer {
       text-align: left; }
+  .SubNavCard__img-Container__img {
+    width: 40%;
+    height: auto; }
   .ArticleNav {
     margin-bottom: 15px; }
     .ArticleNav--last {
@@ -1211,7 +1218,7 @@ a.black-link {
     margin-bottom: 0; }
   .SubNavCard__img-Container__img {
     height: 100%;
-    max-height: 150px;
+    max-height: 130px;
     width: auto; }
   .Article__title {
     font-size: 2em; }
