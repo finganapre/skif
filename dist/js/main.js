@@ -65,7 +65,8 @@ $(function(){
 
 		// test resolution and button position
 		function changeActionBtnsPosCtrl (event) {
-			windowWidth = document.documentElement.clientWidth;
+			windowWidth = window.innerWidth;
+			console.log(windowWidth);
 			window.removeEventListener('resize', changeActionBtnsPosCtrl);
 
 			(windowWidth < md) ? putMainBtnToNavLine() : putMainBtnToHeader();
@@ -83,5 +84,27 @@ $(function(){
 			mainHeader.find('.row').find('div').last().prepend(mainActionBtns);
 		}
 	}
+
+
+
+
+	// ---------- change text in top action button ---------- //
+	var topActBtn = $('#top-act-btn');
+
+	var xsText = 'Онлайн запись';
+	var standartText = 'Записаться на прием';
+	
+	changeTopActBtnText();
+	window.addEventListener('resize', changeTopActBtnText);
+	
+	function changeTopActBtnText(){
+		var windowWidth = window.innerWidth;
+
+		window.removeEventListener('resize', changeTopActBtnText);
+		(windowWidth < sm) ? topActBtn.text(xsText) : topActBtn.text(standartText);
+
+		window.addEventListener('resize', changeTopActBtnText);
+	}
+
 });
 
