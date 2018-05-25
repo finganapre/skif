@@ -10,7 +10,7 @@ div#finSliderMenu-menuBlock{
 }
 div#finSliderMenu-menuContentBlock{
 	width:auto;
-	padding: 0 5% 0 5%;
+	padding: 0;
 	position: fixed;
 	display: none; /*не менять*/
 	background-color: #fff;
@@ -206,11 +206,12 @@ div#finSliderMenu-menuContentBlock{
 
 
 #finSliderMenu-menuCloseButton-container{
+	display: block;
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 30px;
-	padding: 0 15px 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
 
 }
 /* close button inside content menu */
@@ -221,7 +222,6 @@ div#finSliderMenu-menuContentBlock{
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	
 }
 
 #finSliderMenu-menuCloseButton-item1{
