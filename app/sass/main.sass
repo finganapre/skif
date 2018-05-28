@@ -1,6 +1,7 @@
 @import "_varSass.sass"
 
 html, body
+	font-family: "FiraSansRegular"
 	font-size: 16px
 	min-width: 305px
 
@@ -21,7 +22,7 @@ html, body
 		padding: 0
 		letter-spacing: 0.2em
 		margin-right: 10px
-		font-weight: bold
+		font-family: "FiraSansBold"
 		text-transform: uppercase
 		&--vr
 			margin: 0
@@ -55,13 +56,14 @@ html, body
 	&__tagline
 		font-size: 0.8em
 		line-height: 1.6em
-		font-weight: bold
+		font-family: "FiraSansBold"
+		letter-spacing: 0.05em
 		text-transform: uppercase
 		&--white
 			color: $whiteColor
 		&--footerFont
 			text-transform: none
-			font-weight: 400
+			font-family: "FiraSansBold" //400
 			font-size: 1em
 
 	&--vr
@@ -80,7 +82,7 @@ html, body
 		list-style-type: none
 		&__link
 			color: $blackColor
-			font-weight: bold
+			font-family: "FiraSansBold"
 			&:hover
 				color: $blackColor
 				text-decoration: none
@@ -89,7 +91,7 @@ html, body
 				text-decoration: none
 			&--footer
 				color: $whiteColor
-				font-weight: 400
+				font-family: "FiraSansBold" //400
 				font-size: 1.8em
 				line-height: 1.3
 				&:hover
@@ -160,7 +162,7 @@ hr.line
 			&__link
 				color: $blackColor
 				text-transform: uppercase
-				font-weight: bold
+				font-family: "FiraSansBold"
 				text-decoration: none
 				transition: all 0.3s cubic-bezier(0.42,0,0.58,1)
 				&:hover
@@ -294,7 +296,7 @@ hr.line
 				display: block
 				color: inherit
 				text-transform: uppercase
-				font-weight: bold
+				font-family: "FiraSansBold"
 				text-decoration: none
 				padding: 2px 0
 				font-size: 1.5em
@@ -339,7 +341,7 @@ hr.line
 			display: inline-block
 			color: inherit
 			text-transform: uppercase
-			font-weight: bold
+			font-family: "FiraSansBold"
 			text-decoration: none
 			padding: 2px 0
 			font-size: 1em
@@ -386,13 +388,13 @@ hr.line
 				&__date
 					color: $accentColor
 					text-transform: uppercase
-					font-weight: bold
+					font-family: "FiraSansBold"
 		&__main
 			&__content
 				padding-bottom: 15px
 				&__p
 					width: 100%
-					font-weight: bold
+					font-family: "FiraSansBold"
 					//max-height: 200px
 					//overflow: hidden
 					//text-overflow: ellipsis				
@@ -408,7 +410,7 @@ hr.line
 		color: $blackColor
 		text-transform: uppercase
 		text-decoration: none
-		font-weight: bold
+		font-family: "FiraSansBold"
 		transition: transAllCB
 		&:focus
 			color: $blackColor
@@ -438,7 +440,7 @@ hr.line
 		margin-top: 15px
 		margin-bottom: 20px
 		line-height: 1.4
-		font-weight: bold
+		font-family: "FiraSansBold"
 		font-size: 0.95em
 	&__list
 		margin: 0
@@ -465,12 +467,12 @@ hr.line
 .Article
 	&__title
 		font-size: 3em
-		font-weight: bold
+		font-family: "FiraSansBold"
 		&--back
 			font-size: 1.7em
 	&__sub-title
 		font-size: 1.5em
-		font-weight: bold
+		font-family: "FiraSansBold"
 .ArticleNav
 	padding: 0
 	margin: 0
@@ -549,7 +551,7 @@ hr.line
 		&__top
 			width: 80%			
 			&__title
-				font-weight: bold
+				font-family: "FiraSansBold"
 				font-size: 2.3em
 				border-bottom: 1px solid $accentColor
 				padding: 15px
@@ -598,7 +600,7 @@ hr.line
 .GamburgerNavTitle
 	color: $accentColor
 	text-transform: uppercase
-	font-weight: bold
+	font-family: "FiraSansBold"
 .WorkTime
 	border-left: 1px solid $accentColor
 	padding: 0 30px 0 30px
@@ -615,13 +617,13 @@ hr.line
 				font-size: 1em
 				text-align: center
 				color: $accentColor
-				font-weight: bold
+				font-family: "FiraSansBold"
 				margin-bottom: 5px
 			&__time
 				font-size: 2.4em
 				text-align: center
 				color: $blackColor
-				font-weight: bold
+				font-family: "FiraSansBold"
 				line-height: 1
 
 // find form for drupal (bootstrap3)
@@ -815,7 +817,7 @@ a.black-link
 	padding: 5px 12px
 	font-size: 0.9em
 	text-transform: uppercase
-	font-weight: 600
+	font-family: "FiraSansBold"
 	letter-spacing: 1px
 	border-radius: 0
 	text-align: center
@@ -841,7 +843,7 @@ a.black-link
 	padding: 15px 45px
 	font-size: 13px
 	text-transform: uppercase
-	font-weight: 600
+	font-family: "FiraSansBold"
 	letter-spacing: 3px
 	border-radius: 2px
 	text-align: center

@@ -1,4 +1,5 @@
 html, body {
+  font-family: "FiraSansRegular";
   font-size: 16px;
   min-width: 305px; }
 
@@ -30,7 +31,7 @@ html, body {
     padding: 0;
     letter-spacing: 0.2em;
     margin-right: 10px;
-    font-weight: bold;
+    font-family: "FiraSansBold";
     text-transform: uppercase; }
     .MainLogo__title--vr {
       margin: 0;
@@ -66,13 +67,14 @@ html, body {
   .MainLogo__tagline {
     font-size: 0.8em;
     line-height: 1.6em;
-    font-weight: bold;
+    font-family: "FiraSansBold";
+    letter-spacing: 0.05em;
     text-transform: uppercase; }
     .MainLogo__tagline--white {
       color: #fff; }
     .MainLogo__tagline--footerFont {
       text-transform: none;
-      font-weight: 400;
+      font-family: "FiraSansBold";
       font-size: 1em; }
   .MainLogo--vr {
     -webkit-box-orient: vertical;
@@ -96,7 +98,7 @@ html, body {
     list-style-type: none; }
     .Tel__item__link {
       color: #333;
-      font-weight: bold; }
+      font-family: "FiraSansBold"; }
       .Tel__item__link:hover {
         color: #333;
         text-decoration: none; }
@@ -105,7 +107,7 @@ html, body {
         text-decoration: none; }
       .Tel__item__link--footer {
         color: #fff;
-        font-weight: 400;
+        font-family: "FiraSansBold";
         font-size: 1.8em;
         line-height: 1.3; }
         .Tel__item__link--footer:hover {
@@ -208,7 +210,7 @@ hr.line {
     .MainMenu__list__item__link {
       color: #333;
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: "FiraSansBold";
       text-decoration: none;
       -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
@@ -390,7 +392,7 @@ hr.line {
         display: block;
         color: inherit;
         text-transform: uppercase;
-        font-weight: bold;
+        font-family: "FiraSansBold";
         text-decoration: none;
         padding: 2px 0;
         font-size: 1.5em;
@@ -434,7 +436,7 @@ hr.line {
       display: inline-block;
       color: inherit;
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: "FiraSansBold";
       text-decoration: none;
       padding: 2px 0;
       font-size: 1em;
@@ -493,12 +495,12 @@ hr.line {
     .Review__top__header__content__date {
       color: #4bcaff;
       text-transform: uppercase;
-      font-weight: bold; }
+      font-family: "FiraSansBold"; }
   .Review__top__main__content {
     padding-bottom: 15px; }
     .Review__top__main__content__p {
       width: 100%;
-      font-weight: bold; }
+      font-family: "FiraSansBold"; }
   .Review__footer__content__name {
     color: #4bcaff; }
 
@@ -510,7 +512,7 @@ hr.line {
     color: #333;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    font-family: "FiraSansBold";
     -webkit-transition: transAllCB;
     -o-transition: transAllCB;
     transition: transAllCB; }
@@ -538,7 +540,7 @@ hr.line {
   margin-top: 15px;
   margin-bottom: 20px;
   line-height: 1.4;
-  font-weight: bold;
+  font-family: "FiraSansBold";
   font-size: 0.95em; }
 
 .FooterNav__list {
@@ -566,13 +568,13 @@ hr.line {
 
 .Article__title {
   font-size: 3em;
-  font-weight: bold; }
+  font-family: "FiraSansBold"; }
   .Article__title--back {
     font-size: 1.7em; }
 
 .Article__sub-title {
   font-size: 1.5em;
-  font-weight: bold; }
+  font-family: "FiraSansBold"; }
 
 .ArticleNav {
   padding: 0;
@@ -677,7 +679,7 @@ hr.line {
     .Article__spec__header__right-col__top {
       width: 80%; }
       .Article__spec__header__right-col__top__title {
-        font-weight: bold;
+        font-family: "FiraSansBold";
         font-size: 2.3em;
         border-bottom: 1px solid #4bcaff;
         padding: 15px;
@@ -737,7 +739,7 @@ hr.line {
 .GamburgerNavTitle {
   color: #4bcaff;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-family: "FiraSansBold"; }
 
 .WorkTime {
   border-left: 1px solid #4bcaff;
@@ -754,13 +756,13 @@ hr.line {
       font-size: 1em;
       text-align: center;
       color: #4bcaff;
-      font-weight: bold;
+      font-family: "FiraSansBold";
       margin-bottom: 5px; }
     .WorkTime__main__time-container__time {
       font-size: 2.4em;
       text-align: center;
       color: #333;
-      font-weight: bold;
+      font-family: "FiraSansBold";
       line-height: 1; }
 
 .FooterSearch .element-invisible {
@@ -1000,7 +1002,7 @@ a.black-link {
   padding: 5px 12px;
   font-size: 0.9em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "FiraSansBold";
   letter-spacing: 1px;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -1028,7 +1030,7 @@ a.black-link {
   padding: 15px 45px;
   font-size: 13px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "FiraSansBold";
   letter-spacing: 3px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
