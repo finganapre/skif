@@ -211,6 +211,7 @@ hr.line {
       color: #333;
       text-transform: uppercase;
       font-family: "FiraSansBold";
+      letter-spacing: 0.05em;
       text-decoration: none;
       -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
@@ -393,6 +394,7 @@ hr.line {
         color: inherit;
         text-transform: uppercase;
         font-family: "FiraSansBold";
+        letter-spacing: 0.05em;
         text-decoration: none;
         padding: 2px 0;
         font-size: 1.5em;
@@ -437,6 +439,7 @@ hr.line {
       color: inherit;
       text-transform: uppercase;
       font-family: "FiraSansBold";
+      letter-spacing: 0.05em;
       text-decoration: none;
       padding: 2px 0;
       font-size: 1em;
@@ -788,8 +791,8 @@ hr.line {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 16px;
-  padding-top: 18.5px;
-  padding-bottom: 18.5px; }
+  padding-top: 19px;
+  padding-bottom: 19px; }
   .FooterSearch .form-control.form-text.find::-webkit-input-placeholder {
     color: #fff; }
   .FooterSearch .form-control.form-text.find::-moz-placeholder {
@@ -822,8 +825,8 @@ hr.line {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 16px;
-  padding-top: 18.5px;
-  padding-bottom: 18.5px; }
+  padding-top: 19px;
+  padding-bottom: 19px; }
   .GamburgerSearch .form-control.form-text.find::-webkit-input-placeholder {
     color: #4bcaff; }
   .GamburgerSearch .form-control.form-text.find::-moz-placeholder {
