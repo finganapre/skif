@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   font-family: "FiraSansRegular";
   font-size: 16px;
@@ -96,6 +97,8 @@ html, body {
     margin-bottom: 10px; }
   .Tel__item {
     list-style-type: none; }
+    .Tel__item--cons {
+      text-align: center; }
     .Tel__item__link {
       color: #333;
       font-family: "FiraSansBold"; }
@@ -115,6 +118,17 @@ html, body {
           text-decoration: none; }
         .Tel__item__link--footer:focus {
           color: #fff;
+          text-decoration: none; }
+      .Tel__item__link--cons {
+        color: #4bcaff;
+        font-family: "FiraSansRegular";
+        font-size: 1.7em;
+        line-height: 1.3; }
+        .Tel__item__link--cons:hover {
+          color: #4bcaff;
+          text-decoration: none; }
+        .Tel__item__link--cons:focus {
+          color: #4bcaff;
           text-decoration: none; }
 
 .Address {
@@ -739,6 +753,47 @@ hr.line {
       height: auto;
       max-height: 100%; }
 
+/* Флебология */
+.SupInt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .SupInt__photoContainer {
+    margin-bottom: 10px;
+    width: 100%; }
+    .SupInt__photoContainer__img {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 150px;
+      height: auto; }
+  .SupInt__description {
+    width: 100%; }
+    .SupInt__description__fName {
+      text-align: center;
+      display: block;
+      margin-bottom: 5px; }
+    .SupInt__description__position {
+      text-align: center;
+      display: block;
+      color: #4bcaff;
+      font-size: 0.9em; }
+
+/*  */
+.ConsultationsCont__des {
+  text-align: center;
+  margin-bottom: 15px; }
+
 .GamburgerNavTitle {
   color: #4bcaff;
   text-transform: uppercase;
@@ -996,6 +1051,9 @@ a.black-link {
 .no-padding {
   padding: 0; }
 
+.no-margin {
+  margin: 0; }
+
 .flat-button {
   display: inline-block;
   border: none;
@@ -1023,6 +1081,8 @@ a.black-link {
   .flat-button:focus {
     color: #fff;
     text-decoration: none; }
+  .flat-button--big {
+    padding: 15px 40px; }
 
 .material-button {
   display: inline-block;
