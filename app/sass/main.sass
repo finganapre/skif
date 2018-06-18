@@ -627,9 +627,10 @@ hr.line
 	&__photoContainer
 		margin-bottom: 10px
 		width: 100%
+		text-align: center
 		&__img
 			border-radius: 50%
-			width: 150px
+			width: 125px
 			height: auto
 
 	&__description
@@ -735,6 +736,9 @@ hr.line
 	background-color: $lightcyan
 
 // padding std
+.std-pd-small
+	padding-top: 15px
+	padding-bottom: 15px
 .std-pd-medium
 	padding-top: 30px
 	padding-bottom: 30px
@@ -746,6 +750,8 @@ hr.line
 .std-pd-large
 	padding-top: 60px
 	padding-bottom: 60px
+.std-pd-large-t
+	padding-top: 60px
 // margin std
 .std-mn-medium-b
 	margin-bottom: 30px
@@ -859,10 +865,17 @@ a.black-link
 
 
 /* ----- default Sass Style ----- */
+.img-galery-cont
+	margin-bottom: 15px
+.img-galery-cont
+	&:last-child
+		margin-bottom: 0
 .no-padding
 	padding: 0
 .no-margin
 	margin: 0
+.bold
+	font-family: "FiraSansBold"
 // button
 .flat-button
 	display: inline-block
@@ -1067,6 +1080,8 @@ a.black-link
 		margin-bottom: 40px
 		&--no-sm-margin
 			margin-bottom: 0
+	.SupInt
+		margin-bottom: 15px
 	.WorkTime
 		border: none
 		border-top: 1px solid $accentColor

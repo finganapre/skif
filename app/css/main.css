@@ -771,11 +771,12 @@ hr.line {
   width: 100%; }
   .SupInt__photoContainer {
     margin-bottom: 10px;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .SupInt__photoContainer__img {
       -webkit-border-radius: 50%;
               border-radius: 50%;
-      width: 150px;
+      width: 125px;
       height: auto; }
   .SupInt__description {
     width: 100%; }
@@ -896,6 +897,10 @@ hr.line {
 .lightcyan-bg {
   background-color: lightcyan; }
 
+.std-pd-small {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 .std-pd-medium {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -908,6 +913,9 @@ hr.line {
 .std-pd-large {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+.std-pd-large-t {
+  padding-top: 60px; }
 
 .std-mn-medium-b {
   margin-bottom: 30px; }
@@ -1048,11 +1056,20 @@ a.black-link {
     color: #333; }
 
 /* ----- default Sass Style ----- */
+.img-galery-cont {
+  margin-bottom: 15px; }
+
+.img-galery-cont:last-child {
+  margin-bottom: 0; }
+
 .no-padding {
   padding: 0; }
 
 .no-margin {
   margin: 0; }
+
+.bold {
+  font-family: "FiraSansBold"; }
 
 .flat-button {
   display: inline-block;
@@ -1262,6 +1279,8 @@ a.black-link {
     margin-bottom: 40px; }
     .SubNavCard--no-sm-margin {
       margin-bottom: 0; }
+  .SupInt {
+    margin-bottom: 15px; }
   .WorkTime {
     border: none;
     border-top: 1px solid #4bcaff;
